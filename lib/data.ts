@@ -1,0 +1,78 @@
+import bcrypt from "bcryptjs";
+
+const data = {
+  users: [
+    {
+      name: "Dao Quang Dat",
+      email: "admin@gmail.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: true,
+    },
+    {
+      name: "Tony",
+      email: "user@gmail.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      name: "Free Shirt",
+      slug: "free-shirt",
+      category: "Shirt",
+      image: "/images/shirt1.jpg",
+      price: 70,
+      brand: "Nike",
+      rating: 4.5,
+      numReviews: 8,
+      countInStock: 20,
+      description: "A popular shirt",
+      isFeatured: true,
+      banner: "/images/banner1.jpg",
+    },
+    {
+      name: "Classic Polo",
+      slug: "classic-polo",
+      category: "Shirt",
+      image: "/images/shirt2.jpg",
+      price: 50,
+      brand: "Ralph Lauren",
+      rating: 4.8,
+      numReviews: 15,
+      countInStock: 30,
+      description: "A stylish and timeless polo shirt",
+      isFeatured: true,
+      banner: "/images/banner2.jpg",
+    },
+    {
+      name: "Casual Tee",
+      slug: "casual-tee",
+      category: "Shirt",
+      image: "/images/shirt3.jpg",
+      price: 25,
+      brand: "H&M",
+      rating: 4.3,
+      numReviews: 20,
+      countInStock: 50,
+      description: "A comfortable and casual t-shirt",
+      isFeatured: false,
+      banner: "/images/banner3.jpg",
+    },
+    {
+      name: "Athletic Fit Shirt",
+      slug: "athletic-fit-shirt",
+      category: "Shirt",
+      image: "/images/shirt4.jpg",
+      price: 60,
+      brand: "Under Armour",
+      rating: 4.7,
+      numReviews: 12,
+      countInStock: 25,
+      description: "A shirt designed for an athletic fit",
+      isFeatured: true,
+      banner: "/images/banner4.png",
+    },
+  ],
+};
+
+export default data;
